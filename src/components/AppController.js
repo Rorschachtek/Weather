@@ -1,5 +1,6 @@
 import {useReducer, useEffect} from 'react'
 import axios from 'axios'
+const key = process.env.REACT_APP_API_KEY
 const actions={
     makeReq: 'makeReq',
     getData:'getdata',
@@ -24,7 +25,7 @@ const AppController = (city,params) => {
     }
     useEffect(()=>{
         dispatch({type: actions.makeReq})
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city.city}&appid=a9feff2fcf6668ee863041db3f8eeb78`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city.city}&appid=${key}`)
         .then(res=>{
           
          dispatch({type:actions.getData, payload:res.data}) 

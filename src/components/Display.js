@@ -14,14 +14,14 @@ const Display = ({city}) => {
         <p>
           {values.weather.main}
         </p>
-        <p className='Temp'>
+        <div className='Temp'>
           <p>
           Temperature : {(values.main.temp-273.15).toFixed(2)}C
           </p>
           <p>
             Feels Like:  {(values.main.feels_like-273.15).toFixed(2)}C
           </p>
-        </p>
+        </div>
       </div>}
       {loading && <p>loading...</p>}
       {error&& <p>Error..Please check spelling or try to refresh</p>}
