@@ -6,7 +6,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.container{
+  min-height: 300px;
+  max-width: 500px;
+  border: 1px solid black;
+  margin: 30px;
+  
+}
+.Display{
+  width:inherit;
+  margin: 50px;
+  text-align: center;
+}
+.form-control{
+  display: flex;
+  justify-content: center;
+  background-color: khaki;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  
+}
 
+.form-control input{
+  min-height: 30px;
+  outline: none;
+  border-radius: 20px;
+}
+.form-control button{
+  border-radius:20px 
+}
+
+.form-control div{
+  display: flex;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
