@@ -1,6 +1,6 @@
 import {useReducer, useEffect} from 'react'
 import axios from 'axios'
-const key = process.env.REACT_APP_API_KEY
+const key = 'a9feff2fcf6668ee863041db3f8eeb78'
 const actions={
     makeReq: 'makeReq',
     getData:'getdata',
